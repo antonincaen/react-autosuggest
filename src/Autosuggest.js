@@ -521,11 +521,6 @@ export default class Autosuggest extends Component {
         }
 
         this.blurEvent = event;
-
-        if (!this.justSelectedSuggestion) {
-          this.onBlur();
-          this.onSuggestionsClearRequested();
-        }
       },
       onChange: event => {
         const { value } = event.target;
